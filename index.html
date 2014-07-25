@@ -1,13 +1,31 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Pablo Bermúdez | Diseño web & Branding
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<header class="cover">
+
+	<div>
+
+		<img src="img/logo.png" alt="Pablo Bermúdez">
+		
+		<h1>Pablo Bermúdez</h1>
+		<p>Diseño web & Branding</p>
+
+	</div>
+
+</header>
+
+<section class="work">
+
+	<ul>
+
+	{% for post in site.posts %}
+	
+	    {{ post.title }}
+	
+	{% endfor %}
+
+ 	</ul>
+
+ </section>
