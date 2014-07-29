@@ -1,31 +1,28 @@
 ---
 layout: default
-title: Pablo Bermúdez | Diseño web & Branding
+title: Pablo Bermúdez &raquo; Diseño web & Branding
 ---
 
-<header class="cover">
+<section class="cover">
 
 	<div>
 
-		<img src="img/logo.png" alt="Pablo Bermúdez">
+		<a href="{{ site.url }}/trabajos" title="Trabajos">
+
+			<img src="img/logo.png" alt="Pablo Bermúdez">		
+			<h1>Pablo Bermúdez</h1>
+			<p>Diseño web & Branding</p>
+
+		</a>
+
+		<p class="cover-navigation">
+
+			<a href="{{ site.url }}/contacto" title="Contacto">&laquo; Contacto</a>
+			<span>|</span>
+			<a href="{{ site.url }}/trabajos" title="Trabajos">Trabajos &raquo;</a>
 		
-		<h1>Pablo Bermúdez</h1>
-		<p>Diseño web & Branding</p>
+		</p>
 
 	</div>
 
-</header>
-
-<section class="work">
-
-	<ul>
-
-	{% for post in site.posts %}
-	
-	    {{ post.title }}
-	
-	{% endfor %}
-
- 	</ul>
-
- </section>
+</section>

@@ -1,3 +1,7 @@
-name: Pablo Bermúdez | Diseño Web & Branding
+name: 'Pablo Bermúdez'
+
 markdown: redcarpet
 pygments: true
+permalink: /:title
+
+url: http://localhost:4000

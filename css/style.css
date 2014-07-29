@@ -1,11 +1,126 @@
-/* line 1, ../_sass/style.scss */
+/* line 1, ../_sass/_typo.scss */
 body {
-  margin: 0;
-  font-family: 'Minion Pro';
+  font-family: "athelas", "Minion Pro", Georgia, Times, Serif;
   font-size: 1em;
+  line-height: 1.588em;
 }
 
-/* line 10, ../_sass/style.scss */
+/* line 9, ../_sass/_typo.scss */
+a, a:visited {
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 18, ../_sass/_typo.scss */
+h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+  margin: 0 0 .5em;
+}
+@media screen and (min-width: 40em) {
+  /* line 18, ../_sass/_typo.scss */
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 18, ../_sass/_typo.scss */
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* line 1, ../_sass/_layout.scss */
+.group {
+  *zoom: 1;
+}
+
+/* line 3, ../_sass/_layout.scss */
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+/* line 8, ../_sass/_layout.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 10, ../_sass/_layout.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 12, ../_sass/_layout.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../_sass/modules/_nav.scss */
+.navigation {
+  margin: 4em 0 3em;
+}
+/* line 5, ../_sass/modules/_nav.scss */
+.navigation ul {
+  margin: 0 auto !important;
+  padding: 0;
+  list-style: none;
+  display: table;
+}
+/* line 15, ../_sass/modules/_nav.scss */
+.navigation li {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "franklin-gothic-urw", "Proxima Nova", Helvetica, "Helvetica Neue", Arial, sans;
+  font-size: .875em;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 30, ../_sass/modules/_nav.scss */
+.navigation .mleft {
+  text-align: right;
+}
+/* line 32, ../_sass/modules/_nav.scss */
+.navigation a, .navigation a:visited {
+  color: #aaa;
+}
+/* line 38, ../_sass/modules/_nav.scss */
+.navigation a:hover {
+  color: #ddd;
+}
+
+/* line 47, ../_sass/modules/_nav.scss */
+.logo {
+  text-align: center;
+}
+/* line 51, ../_sass/modules/_nav.scss */
+.logo svg {
+  width: 64px;
+  height: 64px;
+  margin: 0 1em;
+}
+@media (min-width: 40em) {
+  /* line 51, ../_sass/modules/_nav.scss */
+  .logo svg {
+    width: 75px;
+    height: 75px;
+    margin: 0 4em;
+  }
+}
+
+/* line 1, ../_sass/modules/_home.scss */
 .cover {
   width: 100%;
   height: 100%;
@@ -15,33 +130,381 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 21, ../_sass/style.scss */
+/* line 12, ../_sass/modules/_home.scss */
 .cover div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 }
-/* line 32, ../_sass/style.scss */
+/* line 24, ../_sass/modules/_home.scss */
 .cover img {
   width: 125px;
   height: auto;
 }
-/* line 39, ../_sass/style.scss */
+@media screen and (min-width: 40em) {
+  /* line 24, ../_sass/modules/_home.scss */
+  .cover img {
+    width: 191px;
+  }
+}
+/* line 37, ../_sass/modules/_home.scss */
 .cover h1 {
   margin: .5em 2em;
   color: #fff;
-  font-size: 1.5em;
-  font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: .25em;
 }
-/* line 51, ../_sass/style.scss */
+/* line 46, ../_sass/modules/_home.scss */
 .cover p {
   margin: 0;
   color: #ccc;
   font-size: 1.125em;
   font-style: italic;
-  letter-spacing: .075em;
+  letter-spacing: .065em;
+}
+@media screen and (min-width: 40em) {
+  /* line 46, ../_sass/modules/_home.scss */
+  .cover p {
+    font-size: 1.45em;
+  }
+}
+/* line 63, ../_sass/modules/_home.scss */
+.cover p.cover-navigation {
+  margin: 2.5em 0 0;
+  font-size: 1.071em;
+  font-style: normal;
+  letter-spacing: .05em;
+  color: #666;
+}
+@media (min-width: 40em) {
+  /* line 63, ../_sass/modules/_home.scss */
+  .cover p.cover-navigation {
+    font-size: 1.275em;
+  }
+}
+/* line 76, ../_sass/modules/_home.scss */
+.cover p.cover-navigation span {
+  display: inline-block;
+  margin: 0 .625em;
+}
+/* line 83, ../_sass/modules/_home.scss */
+.cover p.cover-navigation a, .cover p.cover-navigation a:visited {
+  color: #888;
+}
+/* line 89, ../_sass/modules/_home.scss */
+.cover p.cover-navigation a:hover {
+  color: #fff;
+}
+
+/* line 1, ../_sass/modules/_work.scss */
+.logo-dark #circle {
+  fill: #333;
+}
+
+/* line 7, ../_sass/modules/_work.scss */
+body.works {
+  background: #222;
+}
+@media (min-width: 40em) {
+  /* line 7, ../_sass/modules/_work.scss */
+  body.works {
+    background: #222222 url("../img/cover.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+/* line 22, ../_sass/modules/_work.scss */
+.work ul {
+  margin: 0;
+  padding: 2em 10%;
+  list-style: none;
+}
+@media (min-width: 40em) {
+  /* line 22, ../_sass/modules/_work.scss */
+  .work ul {
+    padding: 4em 10%;
+  }
+}
+/* line 34, ../_sass/modules/_work.scss */
+.work li {
+  display: block;
+  margin: 0 0 3em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 40em) {
+  /* line 34, ../_sass/modules/_work.scss */
+  .work li {
+    width: 42%;
+    margin: 0 4% 4em;
+    float: left;
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 34, ../_sass/modules/_work.scss */
+  .work li {
+    width: 25.333%;
+  }
+}
+/* line 65, ../_sass/modules/_work.scss */
+.work a, .work a:visited {
+  color: #ddd;
+}
+/* line 71, ../_sass/modules/_work.scss */
+.work a:hover {
+  color: #fff;
+}
+/* line 77, ../_sass/modules/_work.scss */
+.work h2 {
+  margin: 1.5em 0 .15em;
+  font-size: 1.25em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+/* line 89, ../_sass/modules/_work.scss */
+.work p {
+  margin: 0;
+  font-size: 1em;
+  color: #999;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+/* line 101, ../_sass/modules/_work.scss */
+.work .thumb {
+  display: block;
+  width: 100%;
+  height: 14em;
+  background: #444;
+}
+
+/* line 1, ../_sass/modules/_article.scss */
+.post {
+  margin: 1em 2em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 40em) {
+  /* line 1, ../_sass/modules/_article.scss */
+  .post {
+    margin: 2em 20%;
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 1, ../_sass/modules/_article.scss */
+  .post {
+    margin: 0 20%;
+  }
+}
+/* line 21, ../_sass/modules/_article.scss */
+.post header {
+  margin: 0 0 3em;
+}
+/* line 27, ../_sass/modules/_article.scss */
+.post h1 {
+  margin: 1em 0 .25em;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 40, ../_sass/modules/_article.scss */
+.post header p {
+  margin: 0 0 1.25em;
+  font-family: "athelas", "Minion Pro", Georgia, Times, Serif;
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: .125em;
+  opacity: .6;
+}
+@media (min-width: 40em) {
+  /* line 40, ../_sass/modules/_article.scss */
+  .post header p {
+    font-size: 1.25em;
+  }
+}
+/* line 58, ../_sass/modules/_article.scss */
+.post hr {
+  width: 4em;
+  height: 1px;
+  margin: 0 auto;
+  border: 0;
+  opacity: .25;
+}
+/* line 69, ../_sass/modules/_article.scss */
+.post .content {
+  font-size: 1.185em;
+}
+/* line 75, ../_sass/modules/_article.scss */
+.post p {
+  margin: 0 0 1.625em;
+  opacity: .9;
+  font-family: "franklin-gothic-urw", "Proxima Nova", Helvetica, "Helvetica Neue", Arial, sans;
+  font-size: .938em;
+  line-height: 1.4em;
+}
+@media screen and (min-width: 40em) {
+  /* line 75, ../_sass/modules/_article.scss */
+  .post p {
+    margin: 0 6.5em 1.75em;
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+}
+/* line 95, ../_sass/modules/_article.scss */
+.post figure {
+  position: relative;
+  margin: 2.5em 0;
+  padding: 0;
+}
+/* line 101, ../_sass/modules/_article.scss */
+.post figure img {
+  width: 100%;
+  height: auto;
+}
+/* line 106, ../_sass/modules/_article.scss */
+.post figure figcaption {
+  font-family: "franklin-gothic-urw", "Proxima Nova", Helvetica, "Helvetica Neue", Arial, sans;
+  font-size: .8em;
+  font-weight: 500;
+  line-height: 1.3em;
+  opacity: .1;
+  padding-left: .25em;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media screen and (min-width: 80em) {
+  /* line 106, ../_sass/modules/_article.scss */
+  .post figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 6em;
+    padding-left: 1.5em;
+  }
+}
+/* line 130, ../_sass/modules/_article.scss */
+.post figure:hover figcaption {
+  opacity: 1;
+}
+/* line 136, ../_sass/modules/_article.scss */
+.post strong, .post b {
+  font-weight: 500;
+}
+/* line 140, ../_sass/modules/_article.scss */
+.post a, .post a:visited {
+  font-weight: 500;
+}
+
+/* line 2, ../_sass/modules/_contact.scss */
+.contact {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 80%;
+  padding: 0 10%;
+  min-height: 100%;
+  min-height: 100vh;
+  background: #222222 url("../img/cover.jpg") 50% 50% no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 40em) {
+  /* line 2, ../_sass/modules/_contact.scss */
+  .contact {
+    width: 60%;
+    padding: 0 20%;
+  }
+}
+/* line 22, ../_sass/modules/_contact.scss */
+.contact h4 {
+  width: 100%;
+  margin: 0 0 1.5em;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-urw", "Proxima Nova", Helvetica, "Helvetica Neue", Arial, sans;
+  color: #888;
+  font-size: .938em;
+  font-weight: 500;
+  border-bottom: 1px solid #666;
+}
+/* line 35, ../_sass/modules/_contact.scss */
+.contact div {
+  margin: 0 0 4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 40em) {
+  /* line 35, ../_sass/modules/_contact.scss */
+  .contact div {
+    float: left;
+    padding: 0 2.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+/* line 51, ../_sass/modules/_contact.scss */
+.contact span, .contact span a, .contact span a:visited {
+  color: #fff;
+}
+
+/* line 55, ../_sass/modules/_contact.scss */
+.contact-info {
+  margin: 4em 0 0;
+}
+
+/* line 57, ../_sass/modules/_contact.scss */
+.mail span {
+  font-size: 1.75em;
+}
+
+/* line 58, ../_sass/modules/_contact.scss */
+.skype span {
+  font-size: 1.25em;
+}
+
+/* line 59, ../_sass/modules/_contact.scss */
+.phone span {
+  font-size: 1.071em;
+}
+
+@media (min-width: 40em) {
+  /* line 63, ../_sass/modules/_contact.scss */
+  .contact-info {
+    margin: 8em 0 0;
+  }
+
+  /* line 65, ../_sass/modules/_contact.scss */
+  .mail {
+    width: 100%;
+  }
+
+  /* line 66, ../_sass/modules/_contact.scss */
+  .skype, .phone {
+    width: 50%;
+  }
+
+  /* line 68, ../_sass/modules/_contact.scss */
+  .mail span {
+    font-size: 2.5em;
+  }
+
+  /* line 69, ../_sass/modules/_contact.scss */
+  .skype span {
+    font-size: 1.5em;
+  }
+
+  /* line 70, ../_sass/modules/_contact.scss */
+  .phone span {
+    font-size: 1.125em;
+  }
 }

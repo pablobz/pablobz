@@ -1,0 +1,70 @@
+.navigation {
+
+	margin: 4em 0 3em;
+	
+	& ul {
+
+		margin: 0 auto !important;
+		padding: 0;
+		list-style: none;
+
+		display: table;
+
+	}
+
+	& li {
+
+		display: table-cell;
+		vertical-align: middle;
+
+		font-family: $sans;
+		font-size: .875em;
+		font-weight: 500;
+		text-transform: uppercase;	
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+	}
+
+	& .mleft { text-align: right; }
+
+	& a, & a:visited {
+
+		color: #aaa;
+
+	}
+
+	& a:hover {
+
+		color: #ddd;
+
+	}
+
+}
+
+
+.logo {
+	
+	text-align: center;
+
+	& svg {
+
+		width: 64px;
+		height: 64px;
+		margin: 0 1em;
+
+		@media (min-width: $tablet) {
+
+			width: 75px;
+			height: 75px;
+			margin: 0 4em;
+
+		}
+
+			
+
+	}
+
+}
+

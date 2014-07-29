@@ -1,0 +1,49 @@
+---
+layout: default
+class: works
+title: Pablo Bermúdez &raquo; Trabajos
+---
+
+<div id="background_wrap"></div>
+
+<nav class="navigation">
+
+	<ul>
+
+		<li class="mleft">
+			<a href="{{ site.url }}" title="Portada">&laquo; Portada</a>
+		</li>
+
+		<li class="logo logo-dark">
+			<a href="{{ site.url }}" title="Portada">
+				{% include logo.svg %}
+			</a>
+		</li>
+
+		<li class="mright">
+			<a href="{{ site.url }}/contacto" title="Contacto">Contacto &raquo;</a>
+		</li>
+
+	</ul>
+
+</nav>
+
+<section class="work group">
+
+	<ul>
+
+	{% for post in site.posts %}
+
+		<li>
+			
+			<a href="{{ post.url }}" title="{{ post.title }}"><div class="thumb"></div></a>
+		    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+		    <p>web & branding</p>		    
+
+	    </li>
+	
+	{% endfor %}
+
+ 	</ul>
+
+ </section>

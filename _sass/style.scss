@@ -1,63 +1,6 @@
-body {
+@import '_base';
+@import '_typo';
+@import '_layout';
 
-	margin: 0;
 
-	font-family: 'Minion Pro';
-	font-size: 1em;
-
-}
-
-.cover {
-
-	width: 100%;
-	height: 100%;
-	height: 100vh;
-
-	display: table;
-	background: #222 url('../img/cover.jpg') 50% 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-
-	& div {
-
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-		
-		-webkit-font-smoothing: antialiased;
-		font-smoothing: antialiased;
-
-	}
-
-	& img {
-
-		width: 125px;
-		height: auto;
-
-	}
-
-	& h1 {
-
-		margin: .5em 2em;
-
-		color: #fff;
-		font-size: 1.5em;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: .25em;
-
-	}
-
-	& p {
-
-		margin: 0;
-		
-		color: #ccc;
-		font-size: 1.125em;
-		font-style: italic; 
-		letter-spacing: .075em;
-
-	}
-
-}
 

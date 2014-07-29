@@ -1,9 +1,136 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
 
-<div class="post">
-{{ content }}
-</div>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    <title>Pablo Bermúdez &raquo; {{ page.title }}</title>    
+    
+    <meta name="description" content="Diseño web & branding">
+    <meta name="author" content="Pablo Bermúdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+    
+    <!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+
+    {% if page.background %}
+
+        <style>
+            body { 
+                background: #{{ page.background }}; 
+                color: #{{ page.foreground }}; 
+            }
+            .navigation a, .navigation a:visited {
+                color: #{{ page.foreground }}; 
+            }
+            .navigation a:hover {
+                color: #{{ page.bold }}; 
+            }
+            h1, a, a:visited {
+                color: #{{ page.bold }}; 
+            }
+            hr {
+                background: #{{ page.foreground }};
+            }
+            .post figcaption {
+                border-left: 1px solid #{{ page.foreground }};
+            }
+            .logo svg #circle {
+                fill: #{{ page.dark }};
+            }
+            .logo svg .logopath {
+                fill: #{{ page.foreground }};
+            }
+            .logo svg:hover .logopath {
+                fill: #{{ page.bold }};
+            }
+        </style>
+        
+    {% endif %}
+
+</head>
+
+<body class="single">
+
+    <nav class="navigation">
+
+		<ul>
+
+			<li class="mleft">
+				<a href="{{ site.url }}/trabajos" title="Trabajos">&laquo; Trabajos</a>
+			</li>
+
+			<li class="logo">
+				<a href="{{ site.url }}" title="Portada">
+					{% include logo.svg %}
+				</a>
+			</li>
+
+			<li class="mright">
+				<a href="{{ site.url }}/contacto" title="Contacto">Contacto &raquo;</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<article class="post">
+
+		<header>
+			
+			<hr>
+			<h1>{{ page.title }}</h1>
+			{% if page.link %}
+			<p><a href="http://{{ page.link }}">↬ {{ page.link }}</a></p>
+			{% else %}
+			<p>Branding</p>
+			{% endif %}
+			<hr>
+
+		</header>
+
+		<section class="content">
+			
+			{{ content }}
+
+			<hr>
+			
+		</section>
+
+	</article>
+
+	<nav class="navigation">
+
+		<ul>
+
+			<li class="mleft">
+				<a href="{{ site.url }}/trabajos" title="">&laquo; Trabajos</a>
+			</li>
+
+			<li class="logo">
+				<a href="{{ site.url }}" title="Portada">
+					{% include logo.svg %}
+				</a>
+			</li>
+
+			<li class="mright">
+				<a href="{{ site.url }}/contacto" title="">Contacto &raquo;</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+    <script type="text/javascript" src="//use.typekit.net/sdy0xel.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</body>
+
+</html>

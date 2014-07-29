@@ -1,0 +1,38 @@
+body {
+
+	font-family: $serif;
+	font-size: 1em;
+	line-height: 1.588em;	
+
+}
+
+a, a:visited {
+
+	text-decoration: none;
+
+	@include transition-duration(.3s);
+  	@include transition-timing-function(ease-in);
+
+}
+
+h1 {
+
+	font-size: 1.5em;
+	font-weight: 500;
+	
+	text-transform: uppercase;
+	letter-spacing: .125em;
+
+	margin: 0 0 .5em;
+
+	@media screen and (min-width: $tablet) {
+
+		font-size: 1.75em;
+	}
+
+	@media screen and (min-width: $desktop) {
+
+		font-size: 2em;
+	}
+
+}
